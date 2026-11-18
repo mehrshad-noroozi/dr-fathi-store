@@ -96,14 +96,15 @@ nav{
 }
 .hero-in{
   position:relative;max-width:var(--maxw);margin:0 auto;
-  padding:72px 22px 84px;
+  padding:24px 22px 84px;
   display:grid;grid-template-columns:1fr;grid-template-areas:"brand" "photo" "copy";
   gap:30px;align-items:start;
 }
-.hero-brand{grid-area:brand;width:100%;max-width:none;padding:0;margin:0;background:transparent}
+.hero-brand{grid-area:brand;width:100%;max-width:none;padding:0;margin:0;background:transparent;align-items:flex-start}
+.hero-brand .nav-cta{align-self:flex-start;margin-top:0}
 .hero-copy{grid-area:copy}
 .hero .doc-hero{grid-area:photo;width:100%;max-width:760px;margin:0 auto}
-@media(max-width:840px){.hero-in{grid-template-columns:1fr;grid-template-areas:"brand" "photo" "copy";padding:36px 22px 64px;gap:26px}}
+@media(max-width:840px){.hero-in{grid-template-columns:1fr;grid-template-areas:"brand" "photo" "copy";padding:18px 22px 64px;gap:26px}}
 @media(max-width:560px){.hero-brand{gap:12px}.hero-brand .brand-name small{display:none}.hero-brand .nav-cta{padding:9px 14px;white-space:nowrap}}
 .hero-badge{
   display:inline-flex;align-items:center;gap:8px;

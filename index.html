@@ -163,9 +163,9 @@ section{padding:76px 0}
 #doctor{background:var(--ivory)}
 .doc-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:52px;align-items:center}
 @media(max-width:840px){.doc-grid{grid-template-columns:1fr;gap:36px}}
-.doc-photo{min-height:420px}
-.doc-photo img{object-position:center center;transform:scale(1.10);}
-@media(max-width:840px){.doc-photo{min-height:300px}}
+.doc-photo{min-height:0;aspect-ratio:16/9;padding:0}
+.doc-photo img{object-fit:contain;object-position:center center;transform:none;}
+@media(max-width:840px){.doc-photo{min-height:0}}
 .doc-text h3{font-weight:900;font-size:1.35rem;margin-bottom:6px}
 .doc-text .doc-title{color:var(--gold);font-weight:700;font-size:.95rem;margin-bottom:20px}
 .doc-text p{color:var(--ink-soft);margin-bottom:16px;font-size:.98rem}

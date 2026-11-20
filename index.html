@@ -78,7 +78,6 @@ nav{
   display:flex;align-items:center;justify-content:center;
   font-weight:900;font-size:1.15rem;color:var(--gold-2);
 }
-.brand-mark{width:48px;height:48px;border-radius:10px;overflow:hidden}.brand-mark img{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 60%;padding:0;border-radius:9px}
 .brand-name{font-weight:700;font-size:.95rem;line-height:1.5}
 .brand-name small{display:block;font-weight:400;font-size:.72rem;color:var(--gold-2);opacity:.85}
 .nav-cta{padding:10px 22px;font-size:.9rem}
@@ -96,16 +95,10 @@ nav{
 }
 .hero-in{
   position:relative;max-width:var(--maxw);margin:0 auto;
-  padding:24px 22px 84px;
-  display:grid;grid-template-columns:1fr;grid-template-areas:"brand" "photo" "copy";
-  gap:30px;align-items:start;
+  padding:72px 22px 84px;
+  display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center;
 }
-.hero-brand{grid-area:brand;width:100%;max-width:none;padding:0;margin:0;background:transparent;align-items:flex-start}
-.hero-brand .nav-cta{align-self:flex-start;margin-top:0}
-.hero-copy{grid-area:copy}
-.hero .doc-hero{grid-area:photo;width:100%;max-width:760px;margin:0 auto}
-@media(max-width:840px){.hero-in{grid-template-columns:1fr;grid-template-areas:"brand" "photo" "copy";padding:18px 22px 64px;gap:26px}}
-@media(max-width:560px){.hero-brand{gap:12px}.hero-brand .brand-name small{display:none}.hero-brand .nav-cta{padding:9px 14px;white-space:nowrap}}
+@media(max-width:840px){.hero-in{grid-template-columns:1fr;padding:52px 22px 64px;gap:36px}}
 .hero-badge{
   display:inline-flex;align-items:center;gap:8px;
   border:1px solid var(--gold);border-radius:100px;
@@ -163,9 +156,8 @@ section{padding:76px 0}
 #doctor{background:var(--ivory)}
 .doc-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:52px;align-items:center}
 @media(max-width:840px){.doc-grid{grid-template-columns:1fr;gap:36px}}
-.doc-photo{min-height:0;aspect-ratio:auto;padding:0;background:none}
-.doc-photo img{position:static;display:block;width:100%;height:auto;object-fit:initial;object-position:center;transform:none;}
-@media(max-width:840px){.doc-photo{min-height:0;aspect-ratio:auto}}
+.doc-photo{min-height:420px}
+@media(max-width:840px){.doc-photo{min-height:300px}}
 .doc-text h3{font-weight:900;font-size:1.35rem;margin-bottom:6px}
 .doc-text .doc-title{color:var(--gold);font-weight:700;font-size:.95rem;margin-bottom:20px}
 .doc-text p{color:var(--ink-soft);margin-bottom:16px;font-size:.98rem}
@@ -367,26 +359,26 @@ footer{background:var(--green-950);color:var(--green-100);padding:64px 0 30px;bo
 <meta name="ai-disclosure" content="ai-autonomous" ai-model="GLM-5.3-Flash" ai-provider="Thaura"><meta name="generator" content="Thaura (GLM-5.3-Flash)"></head>
 <body>
 
+<!-- ===================== ناوبری ===================== -->
+<nav>
+  <div class="nav-in">
+    <a class="brand" href="#top">
+      <span class="brand-mark">ف</span>
+      <span class="brand-name">سلامتکده آقایان دکتر فتحی<small>درمان طبیعی و گیاهی زیر نظر پزشک</small></span>
+    </a>
+    <a class="btn btn-gold nav-cta" href="#order">مشاوره رایگان</a>
+  </div>
+</nav>
+
 <!-- ===================== هیرو ===================== -->
 <header class="hero" id="top">
   <div class="hero-in">
-    <div class="nav-in hero-brand">
-      <a class="brand" href="#top">
-        <span class="brand-mark"><img src="IMG-20261106-WA0019.jpg" alt="لوگوی دکتر فتحی"></span>
-        <span class="brand-name">سلامتکده آقایان دکتر فتحی<small>درمان طبیعی و گیاهی زیر نظر پزشک</small></span>
-      </a>
-      <a class="btn btn-gold nav-cta" href="https://wa.me/989991548314" target="_blank" rel="noopener">مشاوره رایگان</a>
-    </div>
-    <!-- عکس دکتر درست زیر نوار عنوان و مشاوره -->
-    <div class="photo-slot doc-hero">
-      <img src="%D8%AA%D8%A8%D9%84%DB%8C%D8%BA%D8%A7%D8%AA%20%D8%B7%D8%A8%20%D8%B3%D9%86%D8%AA%DB%8C%20%D8%AF%DA%A9%D8%AA%D8%B1%20%D9%81%D8%AA%D8%AD%DB%8C.png" alt="تبلیغات طب سنتی دکتر فتحی">
-    </div>
-    <div class="hero-copy">
+    <div>
       <span class="hero-badge">✦ زیر نظر دکتر اویس فتحی، متخصص طب سنتی</span>
       <h1>سلامت جنسی آقایان،<br>با درمان ریشه‌ای و کاملاً گیاهی</h1>
       <p class="lead">پکیج درمانی ۱۰۰٪ طبیعی و بدون عوارض، که با تجویز اختصاصی و مشاوره خصوصی دکتر فتحی متناسب با شرایط هر فرد ارائه می‌شود؛ محرمانه، اصولی و مبتنی بر طب سنتی.</p>
       <div class="hero-actions">
-        <a class="btn btn-gold" href="https://wa.me/989991548314" target="_blank" rel="noopener">شروع با مشاوره رایگان</a>
+        <a class="btn btn-gold" href="#order">شروع با مشاوره رایگان</a>
         <a class="btn btn-ghost" href="#products">شناخت محصولات</a>
       </div>
       <div class="hero-trust">
@@ -394,6 +386,13 @@ footer{background:var(--green-950);color:var(--green-100);padding:64px 0 30px;bo
         <span class="trust-chip"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>تجویز زیر نظر پزشک</span>
         <span class="trust-chip"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>کاملاً خصوصی و محرمانه</span>
       </div>
+    </div>
+    <!-- عکس دکتر: کافیست تگ img زیر را با عکس واقعی جایگزین کنید -->
+    <div class="photo-slot doc-hero">
+      <!-- <img src="عکس-دکتر.jpg" alt="دکتر اویس فتحی"> -->
+      <span class="frame"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/></svg></span>
+      <strong>دکتر اویس فتحی</strong>
+      <span>جای عکس چهره دکتر فتحی<br>(این بخش با عکس واقعی جایگزین می‌شود)</span>
     </div>
   </div>
 </header>
@@ -403,7 +402,10 @@ footer{background:var(--green-950);color:var(--green-100);padding:64px 0 30px;bo
   <div class="wrap">
     <div class="doc-grid">
       <div class="photo-slot doc-photo">
-        <img src="1793989187810-6ef59335-9ac9-4d01-8ef2-f042313a6415-01a1b215-aed7-7d37-a16d-3836ee1acafe.webp" alt="دکتر اویس فتحی">
+        <!-- <img src="عکس-دکتر-۲.jpg" alt="دکتر اویس فتحی در مطب"> -->
+        <span class="frame"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/></svg></span>
+        <strong>دکتر اویس فتحی</strong>
+        <span>جای عکس دوم دکتر<br>(در محیط درمان یا پشت میز مشاوره)</span>
       </div>
       <div class="doc-text">
         <h3>دکتر اویس فتحی</h3>
@@ -461,7 +463,11 @@ footer{background:var(--green-950);color:var(--green-100);padding:64px 0 30px;bo
     <article class="product">
       <div class="product-visual">
         <span class="origin">محصول کشور تایلند</span>
-        <img src="2281143290254794499_50240207410992.jpg" alt="بطری شربت سیاه آکسورا با نشان دکتر فتحی">
+        <span class="bottle" aria-hidden="true"></span>
+        <!-- جای عکس واقعی محصول: تگ img زیر را فعال کنید -->
+        <!-- <img src="عکس-شربت-اکسورا.jpg" alt="شربت سیاه آکسورا"> -->
+        <strong>شربت سیاه آکسورا</strong>
+        <span>فرمولاسیون تخصصی گیاهی</span>
       </div>
       <div class="product-body">
         <h3>شربت سیاه آکسورا</h3>
@@ -517,7 +523,7 @@ footer{background:var(--green-950);color:var(--green-100);padding:64px 0 30px;bo
     </div>
     <div class="steps-cta">
       <p>قدم اول همین حالا می‌تواند برداشته شود؛ مشاوره کاملاً رایگان است.</p>
-      <a class="btn btn-gold" href="https://wa.me/989991548314" target="_blank" rel="noopener">رزرو مشاوره رایگان</a>
+      <a class="btn btn-gold" href="#order">رزرو مشاوره رایگان</a>
     </div>
   </div>
 </section>
@@ -638,12 +644,11 @@ footer{background:var(--green-950);color:var(--green-100);padding:64px 0 30px;bo
       <div>
         <div class="foot-h">راه‌های ارتباطی و رزرو مشاوره رایگان</div>
         <div class="contact-list">
-          <a href="tel:+989213722359"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2Z"/></svg>تلفن: ‎+98 921 372 2359</a>
-          <a href="tel:+989385735228"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2Z"/></svg>همراه: ‎+98 938 573 5228</a>
-          <a href="https://wa.me/989991548314" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 21l2.1-5.7A8.4 8.4 0 1 1 21 11.5Z"/></svg>واتساپ: @dr_fathyy</a>
-          <a href="https://rubika.ir/dr_fathyy" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3h11A2.5 2.5 0 0 1 20 5.5v9a2.5 2.5 0 0 1-2.5 2.5H10l-5 4v-4.5a2.5 2.5 0 0 1-1-2Z"/><path d="M8 8h8M8 12h5"/></svg>روبیکا: @dr_fathyy</a>
-          <a href="https://ble.ir/dr_fathyy" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3h11A2.5 2.5 0 0 1 20 5.5v9a2.5 2.5 0 0 1-2.5 2.5H10l-5 4v-4.5a2.5 2.5 0 0 1-1-2Z"/><path d="M8 8h8M8 12h6"/></svg>بله: @dr_fathyy</a>
-          <a href="https://instagram.com/dr_fathyy" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></svg>اینستاگرام: @dr_fathyy</a>
+          <!-- شماره‌ها و آیدی‌ها را با اطلاعات واقعی جایگزین کنید -->
+          <a href="tel:00000000000"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2Z"/></svg>تلفن: ۰۰۰۰ ۰۰۰ ۰۰۰۰</a>
+          <a href="https://wa.me/000000000000" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 21l2.1-5.7A8.4 8.4 0 1 1 21 11.5Z"/></svg>واتس‌اپ: ۰۰۰۰ ۰۰۰ ۰۰۰۰</a>
+          <a href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></svg>اینستاگرام دکتر فتحی: @username</a>
+          <a href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="m21 4-9 9"/><path d="M21 4l-6.5 17-3-7.5L4 10.5 21 4Z"/></svg>تلگرام: @username</a>
         </div>
       </div>
     </div>
@@ -660,8 +665,8 @@ footer{background:var(--green-950);color:var(--green-100);padding:64px 0 30px;bo
 const PERSLINE_FORM_URL = "";
 
 /* راه‌های ارتباطی برای ارسال سوال کاربران (بعداً با شماره واقعی جایگزین شود) */
-const WHATSAPP_NUMBER = "989991548314";
-
+const WHATSAPP_NUMBER = "000000000000"; // با کد کشور، مثلا 989123456789
+const TELEGRAM_ID = "username";
 
 const formLink = document.getElementById('form-link');
 if (PERSLINE_FORM_URL) { formLink.href = PERSLINE_FORM_URL; }
